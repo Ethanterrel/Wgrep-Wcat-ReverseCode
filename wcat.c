@@ -1,27 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define maxchar 1000
 
 
 
-int main() {
-    FILE * file;
+int main(int argone, char *argtwo[]) {
+    FILE *file;
+    char string;
+    char *filename;
 
-  char string [maxchar];
 
-        char *filename = "C:\\Users\\versa\\CLionProjects\\Project 0\\First.txt";
+    if (file == NULL) {
+        printf("bad file");
+        return (0);
+    }
+    else
+    {
+        filename = argtwo[1];
+        printf("Filename : %s\n", filename);
+    }
 
-        file = fopen(filename, "r");
+    file = fopen(filename, "r");
 
-        if (file == NULL) {
-            printf("bad file");
-            return 0;
+    if (file) {
+
+        while ((string = fgetc(file)) != EOF) {
+            printf("%c", string);
         }
 
-        while (fgets(string, maxchar, file) != NULL)
-            printf(string);
 
-
-        fclose(file);
-
-    return 0;
+        exit(0);
+    }
+    return(0);
 }

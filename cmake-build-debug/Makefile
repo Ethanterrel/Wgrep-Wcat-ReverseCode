@@ -142,32 +142,59 @@ Project_0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/build
 .PHONY : Project_0/fast
 
-main.obj: main.c.obj
+wcat.obj: wcat.c.obj
 
-.PHONY : main.obj
+.PHONY : wcat.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/main.c.obj
-.PHONY : main.c.obj
+wcat.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wcat.c.obj
+.PHONY : wcat.c.obj
 
-main.i: main.c.i
+wcat.i: wcat.c.i
 
-.PHONY : main.i
+.PHONY : wcat.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/main.c.i
-.PHONY : main.c.i
+wcat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wcat.c.i
+.PHONY : wcat.c.i
 
-main.s: main.c.s
+wcat.s: wcat.c.s
 
-.PHONY : main.s
+.PHONY : wcat.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/main.c.s
-.PHONY : main.c.s
+wcat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wcat.c.s
+.PHONY : wcat.c.s
+
+wgrep.obj: wgrep.c.obj
+
+.PHONY : wgrep.obj
+
+# target to build an object file
+wgrep.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.obj
+.PHONY : wgrep.c.obj
+
+wgrep.i: wgrep.c.i
+
+.PHONY : wgrep.i
+
+# target to preprocess a source file
+wgrep.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.i
+.PHONY : wgrep.c.i
+
+wgrep.s: wgrep.c.s
+
+.PHONY : wgrep.s
+
+# target to generate assembly for a file
+wgrep.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.s
+.PHONY : wgrep.c.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project_0
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... wcat.obj
+	@echo ... wcat.i
+	@echo ... wcat.s
+	@echo ... wgrep.obj
+	@echo ... wgrep.i
+	@echo ... wgrep.s
 .PHONY : help
 
 

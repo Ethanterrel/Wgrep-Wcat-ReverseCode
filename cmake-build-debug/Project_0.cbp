@@ -74,7 +74,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/versa/CLionProjects/Project 0/main.c">
+		<Unit filename="C:/Users/versa/CLionProjects/Project 0/wcat.c">
+			<Option target="Project_0"/>
+		</Unit>
+		<Unit filename="C:/Users/versa/CLionProjects/Project 0/wgrep.c">
 			<Option target="Project_0"/>
 		</Unit>
 		<Unit filename="C:/Users/versa/CLionProjects/Project 0/CMakeLists.txt">

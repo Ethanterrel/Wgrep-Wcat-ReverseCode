@@ -93,12 +93,12 @@ clean: CMakeFiles/Project_0.dir/clean
 CMakeFiles/Project_0.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Project_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target Project_0"
 .PHONY : CMakeFiles/Project_0.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Project_0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Project_0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Project_0.dir/rule

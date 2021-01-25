@@ -76,32 +76,47 @@ include CMakeFiles/Project_0.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Project_0.dir/flags.make
 
-CMakeFiles/Project_0.dir/main.c.obj: CMakeFiles/Project_0.dir/flags.make
-CMakeFiles/Project_0.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Project_0.dir/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_0.dir\main.c.obj   -c "C:\Users\versa\CLionProjects\Project 0\main.c"
+CMakeFiles/Project_0.dir/wcat.c.obj: CMakeFiles/Project_0.dir/flags.make
+CMakeFiles/Project_0.dir/wcat.c.obj: ../wcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Project_0.dir/wcat.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_0.dir\wcat.c.obj   -c "C:\Users\versa\CLionProjects\Project 0\wcat.c"
 
-CMakeFiles/Project_0.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_0.dir/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\versa\CLionProjects\Project 0\main.c" > CMakeFiles\Project_0.dir\main.c.i
+CMakeFiles/Project_0.dir/wcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_0.dir/wcat.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\versa\CLionProjects\Project 0\wcat.c" > CMakeFiles\Project_0.dir\wcat.c.i
 
-CMakeFiles/Project_0.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\main.c" -o CMakeFiles\Project_0.dir\main.c.s
+CMakeFiles/Project_0.dir/wcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/wcat.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\wcat.c" -o CMakeFiles\Project_0.dir\wcat.c.s
+
+CMakeFiles/Project_0.dir/wgrep.c.obj: CMakeFiles/Project_0.dir/flags.make
+CMakeFiles/Project_0.dir/wgrep.c.obj: ../wgrep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_0.dir/wgrep.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_0.dir\wgrep.c.obj   -c "C:\Users\versa\CLionProjects\Project 0\wgrep.c"
+
+CMakeFiles/Project_0.dir/wgrep.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_0.dir/wgrep.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\versa\CLionProjects\Project 0\wgrep.c" > CMakeFiles\Project_0.dir\wgrep.c.i
+
+CMakeFiles/Project_0.dir/wgrep.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/wgrep.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\wgrep.c" -o CMakeFiles\Project_0.dir\wgrep.c.s
 
 # Object files for target Project_0
 Project_0_OBJECTS = \
-"CMakeFiles/Project_0.dir/main.c.obj"
+"CMakeFiles/Project_0.dir/wcat.c.obj" \
+"CMakeFiles/Project_0.dir/wgrep.c.obj"
 
 # External object files for target Project_0
 Project_0_EXTERNAL_OBJECTS =
 
-Project_0.exe: CMakeFiles/Project_0.dir/main.c.obj
+Project_0.exe: CMakeFiles/Project_0.dir/wcat.c.obj
+Project_0.exe: CMakeFiles/Project_0.dir/wgrep.c.obj
 Project_0.exe: CMakeFiles/Project_0.dir/build.make
 Project_0.exe: CMakeFiles/Project_0.dir/linklibs.rsp
 Project_0.exe: CMakeFiles/Project_0.dir/objects1.rsp
 Project_0.exe: CMakeFiles/Project_0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Project_0.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Project_0.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project_0.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

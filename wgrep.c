@@ -1,21 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-int main()
-
-{
-
-    char word [50];
-    printf("word?");
-    scanf("%s", word);
+int main(int argc,char *argv[]) {
 
 
+    FILE *fp = fopen(argv[2], "r");
 
+    if (fp == NULL) {
+        perror("Unable to open file!");
+        return (0);
+    }
 
-    exit(0);
+    char linesoftext[200];
 
+    while (fgets(linesoftext, sizeof(linesoftext), fp) != NULL) {
+        if (strstr(linesoftext, argv[1])) {
+            fputs(linesoftext, stdout);
+        }
+    }
 
-
-
+    fclose(fp);
+    return 0;
 }

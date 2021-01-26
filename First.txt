@@ -1,5 +1,4 @@
-yes man
-haha
-buddy
-yes
-no
+I am
+Testing
+the current
+text

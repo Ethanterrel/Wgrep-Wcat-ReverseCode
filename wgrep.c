@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc,char *argv[]) {
+int main(int argone,char *argtwo[]) {
 
 
-    FILE *fp = fopen(argv[2], "r");
+    FILE *fp = fopen(argtwo[2], "r");
 
     if (fp == NULL) {
-        perror("Unable to open file!");
+        perror("Wgrep: searchterm");
+        perror(argtwo[1]);
         return (0);
     }
 
     char linesoftext[200];
 
     while (fgets(linesoftext, sizeof(linesoftext), fp) != NULL) {
-        if (strstr(linesoftext, argv[1])) {
+        if (strstr(linesoftext, argtwo[1])) {
             fputs(linesoftext, stdout);
         }
     }

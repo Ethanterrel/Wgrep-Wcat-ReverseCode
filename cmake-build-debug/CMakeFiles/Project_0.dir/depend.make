@@ -3,5 +3,3 @@
 
 CMakeFiles/Project_0.dir/wcat.c.obj: ../wcat.c
 
-CMakeFiles/Project_0.dir/wgrep.c.obj: ../wgrep.c
-

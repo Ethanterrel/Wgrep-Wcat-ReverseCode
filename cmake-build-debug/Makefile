@@ -169,32 +169,32 @@ wcat.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wcat.c.s
 .PHONY : wcat.c.s
 
-wgrep.obj: wgrep.c.obj
+wegrep.obj: wegrep.c.obj
 
-.PHONY : wgrep.obj
+.PHONY : wegrep.obj
 
 # target to build an object file
-wgrep.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.obj
-.PHONY : wgrep.c.obj
+wegrep.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.obj
+.PHONY : wegrep.c.obj
 
-wgrep.i: wgrep.c.i
+wegrep.i: wegrep.c.i
 
-.PHONY : wgrep.i
+.PHONY : wegrep.i
 
 # target to preprocess a source file
-wgrep.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.i
-.PHONY : wgrep.c.i
+wegrep.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.i
+.PHONY : wegrep.c.i
 
-wgrep.s: wgrep.c.s
+wegrep.s: wegrep.c.s
 
-.PHONY : wgrep.s
+.PHONY : wegrep.s
 
 # target to generate assembly for a file
-wgrep.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wgrep.c.s
-.PHONY : wgrep.c.s
+wegrep.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.s
+.PHONY : wegrep.c.s
 
 # Help Target
 help:
@@ -208,9 +208,9 @@ help:
 	@echo ... wcat.obj
 	@echo ... wcat.i
 	@echo ... wcat.s
-	@echo ... wgrep.obj
-	@echo ... wgrep.i
-	@echo ... wgrep.s
+	@echo ... wegrep.obj
+	@echo ... wegrep.i
+	@echo ... wegrep.s
 .PHONY : help
 
 

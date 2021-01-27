@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/versa/CLionProjects/Project 0/wcat.c" "C:/Users/versa/CLionProjects/Project 0/cmake-build-debug/CMakeFiles/Project_0.dir/wcat.c.obj"
-  "C:/Users/versa/CLionProjects/Project 0/wgrep.c" "C:/Users/versa/CLionProjects/Project 0/cmake-build-debug/CMakeFiles/Project_0.dir/wgrep.c.obj"
+  "C:/Users/versa/CLionProjects/Project 0/wegrep.c" "C:/Users/versa/CLionProjects/Project 0/cmake-build-debug/CMakeFiles/Project_0.dir/wegrep.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

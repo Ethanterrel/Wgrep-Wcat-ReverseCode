@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 #define length 1000
 
 int main(int argone,char *argtwo[]) {

@@ -89,29 +89,29 @@ CMakeFiles/Project_0.dir/wcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/wcat.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\wcat.c" -o CMakeFiles\Project_0.dir\wcat.c.s
 
-CMakeFiles/Project_0.dir/wegrep.c.obj: CMakeFiles/Project_0.dir/flags.make
-CMakeFiles/Project_0.dir/wegrep.c.obj: ../wegrep.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_0.dir/wegrep.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_0.dir\wegrep.c.obj   -c "C:\Users\versa\CLionProjects\Project 0\wegrep.c"
+CMakeFiles/Project_0.dir/Reverse.c.obj: CMakeFiles/Project_0.dir/flags.make
+CMakeFiles/Project_0.dir/Reverse.c.obj: ../Reverse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\versa\CLionProjects\Project 0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_0.dir/Reverse.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_0.dir\Reverse.c.obj   -c "C:\Users\versa\CLionProjects\Project 0\Reverse.c"
 
-CMakeFiles/Project_0.dir/wegrep.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_0.dir/wegrep.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\versa\CLionProjects\Project 0\wegrep.c" > CMakeFiles\Project_0.dir\wegrep.c.i
+CMakeFiles/Project_0.dir/Reverse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_0.dir/Reverse.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\versa\CLionProjects\Project 0\Reverse.c" > CMakeFiles\Project_0.dir\Reverse.c.i
 
-CMakeFiles/Project_0.dir/wegrep.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/wegrep.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\wegrep.c" -o CMakeFiles\Project_0.dir\wegrep.c.s
+CMakeFiles/Project_0.dir/Reverse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_0.dir/Reverse.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\versa\CLionProjects\Project 0\Reverse.c" -o CMakeFiles\Project_0.dir\Reverse.c.s
 
 # Object files for target Project_0
 Project_0_OBJECTS = \
 "CMakeFiles/Project_0.dir/wcat.c.obj" \
-"CMakeFiles/Project_0.dir/wegrep.c.obj"
+"CMakeFiles/Project_0.dir/Reverse.c.obj"
 
 # External object files for target Project_0
 Project_0_EXTERNAL_OBJECTS =
 
 Project_0.exe: CMakeFiles/Project_0.dir/wcat.c.obj
-Project_0.exe: CMakeFiles/Project_0.dir/wegrep.c.obj
+Project_0.exe: CMakeFiles/Project_0.dir/Reverse.c.obj
 Project_0.exe: CMakeFiles/Project_0.dir/build.make
 Project_0.exe: CMakeFiles/Project_0.dir/linklibs.rsp
 Project_0.exe: CMakeFiles/Project_0.dir/objects1.rsp

@@ -142,6 +142,33 @@ Project_0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/build
 .PHONY : Project_0/fast
 
+Reverse.obj: Reverse.c.obj
+
+.PHONY : Reverse.obj
+
+# target to build an object file
+Reverse.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/Reverse.c.obj
+.PHONY : Reverse.c.obj
+
+Reverse.i: Reverse.c.i
+
+.PHONY : Reverse.i
+
+# target to preprocess a source file
+Reverse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/Reverse.c.i
+.PHONY : Reverse.c.i
+
+Reverse.s: Reverse.c.s
+
+.PHONY : Reverse.s
+
+# target to generate assembly for a file
+Reverse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/Reverse.c.s
+.PHONY : Reverse.c.s
+
 wcat.obj: wcat.c.obj
 
 .PHONY : wcat.obj
@@ -169,33 +196,6 @@ wcat.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wcat.c.s
 .PHONY : wcat.c.s
 
-wegrep.obj: wegrep.c.obj
-
-.PHONY : wegrep.obj
-
-# target to build an object file
-wegrep.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.obj
-.PHONY : wegrep.c.obj
-
-wegrep.i: wegrep.c.i
-
-.PHONY : wegrep.i
-
-# target to preprocess a source file
-wegrep.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.i
-.PHONY : wegrep.c.i
-
-wegrep.s: wegrep.c.s
-
-.PHONY : wegrep.s
-
-# target to generate assembly for a file
-wegrep.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_0.dir\build.make CMakeFiles/Project_0.dir/wegrep.c.s
-.PHONY : wegrep.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -205,12 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project_0
+	@echo ... Reverse.obj
+	@echo ... Reverse.i
+	@echo ... Reverse.s
 	@echo ... wcat.obj
 	@echo ... wcat.i
 	@echo ... wcat.s
-	@echo ... wegrep.obj
-	@echo ... wegrep.i
-	@echo ... wegrep.s
 .PHONY : help
 
 

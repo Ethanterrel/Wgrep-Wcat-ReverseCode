@@ -1,8 +1,12 @@
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define size 100
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+#define length 5000
 
-#define length 1000
 
 typedef struct node {
     long pos;
@@ -11,31 +15,112 @@ typedef struct node {
 
 Node *add(Node *list, long pos);
 
+
+
 int main(int argc, char *argv[]) {
 
-    int ft;
-    int x=0;
-    int j=0;
 
-    FILE *file;
+
+    int i = 0;
+    FILE *file2;
     FILE *fileopen;
 
-    char *filename;
-    char string;
-    char linesoftext[length];
+    FILE *p;
+    char content[1000][1000];
+    int contentLines = 0;
+
+    int lengthofstringtxt;
+    int x;
+    int index;
+    int wordStart;
+    int wordEnd;
+    int countinglines = 0;
+
     char chary[length];
     char reverse[length];
-
+    char wordsintext[length];
+    char string;
 
     char buff[1024];
     Node *list = NULL;
     long pos;
-    file= fopen("greppy.txt", "r");
+    file2= fopen("greppy.txt", "r");
     fileopen = fopen("First.txt", "w");
 
+// 0 Arguments
+    if (argc < 2) {
+        gets(chary);
+
+        lengthofstringtxt = strlen(chary);
+        index = 0;
+        wordStart = lengthofstringtxt - 1;
+        wordEnd = lengthofstringtxt - 1;
+
+        while (wordStart > 0) {
+            if (chary[wordStart] == ' ') { //check string
+                x = wordStart + 1;
+                while (x <= wordEnd) { // if the word is found
+                    reverse[index] = chary[x]; //reverse index based on current string
+                    x++;
+                    index++;
+                }
+                reverse[index++] = ' '; // check string
+                wordEnd = wordStart - 1;
+            }
+            wordStart--;
+        }
+        for (x = 0; x <= wordEnd; x++) { // add the last word
+            reverse[index] = chary[x];
+            index++;
+        }
+
+
+        printf("Reversed text is now: \n%s", reverse);
+        return 0;
+    }
+
+// one Argument
+
+    FILE *file;
+    char strings;
+    char *filename;
+
+
+    for (int x = 1; x < argc; x++) {
+
+        filename = argv[x];
+        file = fopen(filename, "r");
+
+        if (file) {
+
+            while ((string = fgetc(file)) != EOF) {
+
+                printf("%c", string);
+            }
+
+        }
+
+    }
+
+    if ((p = fopen(argv[1], "r")) == NULL) {
+        printf("Error opening");
+    }  else {
+        while (fgets(content[contentLines], 1000, p) != NULL) {
+            contentLines++;
+        }
+    }
+    for (i = contentLines - 1; i >= 0; i--) {
+        if (i == contentLines - 1) {
+            printf("%s\n", content[i]);
+        } else {
+            printf("%s", content[i]);
+
+        }
+    }
+// 2 arguments
     while (1) {
-        long pos = ftell(file);
-        if (fgets(buff, sizeof buff, file) == NULL)
+        long pos = ftell(file2);
+        if (fgets(buff, sizeof buff, file2) == NULL)
             break;
         list = add(list, pos);
     }
@@ -44,88 +129,15 @@ int main(int argc, char *argv[]) {
     if(argc==2){
         while (list != NULL) {
             pos = list->pos; //get pointer position
-            fseek(file, pos, SEEK_SET);
-            fgets(buff, sizeof buff, file);
+            fseek(file2, pos, SEEK_SET);
+            fgets(buff, sizeof buff, file2);
             buff[strcspn(buff, "\n")] = '\0';
             fprintf(fileopen, "%s\n", buff);
             list = list->next; // get next pointer position
 
         }
-        fclose(file);
+        fclose(file2);
         fclose(fileopen);
-    }
-
-
-
-
-
-    if (argv[1]) {
-        for (int x = 1; x < argc; x++) {
-
-            filename = argv[x];
-            file = fopen(filename, "r");
-
-            if (file) {
-                while ((string = fgetc(file)) != EOF) {
-
-                    printf("%c", string);
-                }
-
-            }
-        }
-
-        FILE *fp;
-
-        char str[1000];
-        char rstr[10];
-        char ch;
-        fp=fopen(argv[1],"r");
-        if(fp==NULL)
-        {
-            printf("This Text is blank");
-            return 0;
-        }
-        fseek(fp,0,SEEK_END);
-        ft=ftell(fp);
-        while(x<ft)
-        {
-            x++;
-            fseek(fp,-x,SEEK_END);
-            ch=fgetc(fp);
-            if(ch==' ')
-            {
-                str[j]=' ';
-                j++;
-                continue;
-            }
-            str[j]=ch;
-            j++;
-        }
-        fclose(fp);
-        str[j]='\n';
-        x=0;
-        j=0;
-        printf("\nReverse Contents of file are\n");
-        while((ch=str[x])!='\0')
-        {
-            if(ch=='\n')
-            {
-                while(--j>=0)
-                {
-                    putchar(rstr[j]);
-                }
-                j=0;
-                printf("\n");
-            }
-            else
-            {
-                rstr[j]=str[x];
-                j++;
-            }
-            x++;
-        }
-        return 0;
-
     }
 
 

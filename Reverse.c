@@ -19,33 +19,29 @@ Node *add(Node *list, long pos);
 
 int main(int argc, char *argv[]) {
 
-
-
-    int i = 0;
     FILE *file2;
     FILE *fileopen;
+    FILE *open;
 
-    FILE *p;
-    char content[1000][1000];
+    int i = 0;
     int contentLines = 0;
-
     int lengthofstringtxt;
     int x;
     int index;
     int wordStart;
     int wordEnd;
-    int countinglines = 0;
 
     char chary[length];
     char reverse[length];
-    char wordsintext[length];
     char string;
+    char content[1000][1000];
 
-    char buff[1024];
+    char buff[1000];
     Node *list = NULL;
     long pos;
-    file2= fopen("greppy.txt", "r");
-    fileopen = fopen("First.txt", "w");
+
+    file2= fopen("input.txt", "r");
+    fileopen = fopen("output.txt", "w");
 
 // 0 Arguments
     if (argc < 2) {
@@ -82,7 +78,6 @@ int main(int argc, char *argv[]) {
 // one Argument
 
     FILE *file;
-    char strings;
     char *filename;
 
 
@@ -102,10 +97,10 @@ int main(int argc, char *argv[]) {
 
     }
 
-    if ((p = fopen(argv[1], "r")) == NULL) {
+    if ((open = fopen(argv[1], "r")) == NULL) {
         printf("Error opening");
     }  else {
-        while (fgets(content[contentLines], 1000, p) != NULL) {
+        while (fgets(content[contentLines], 1000, open) != NULL) {
             contentLines++;
         }
     }
